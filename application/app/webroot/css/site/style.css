@@ -1,0 +1,995 @@
+html, body {
+	height  : 100%;
+	margin  : 0;
+	padding : 0;
+}
+
+body, select, input, textarea {
+	font-size   : 14px;
+	line-height : 18px;
+	font-family : 'Ubuntu', sans-serif;
+	color       : #303030;
+
+}
+
+ul, ol {
+	padding             : 0;
+	margin              : 0;
+	list-style-position : inside;
+}
+
+li {
+	list-style : none inside none;
+}
+
+.green {
+	color : #66BD90;
+}
+
+strong, b {
+	font-weight : bold;
+}
+
+a,
+a:visited {
+	color : #303030;
+}
+
+a:focus,
+input:focus {
+	outline : 0 !important;
+}
+
+a:hover,
+a:visited:hover {
+	color : #66BD90;
+}
+
+.btn,
+.btn:visited,
+a.btn,
+a.btn:visited {
+	color           : #FFF;
+	text-decoration : none !important;
+}
+
+.btn:hover,
+.btn:focus,
+a.btn:hover,
+a.btn:focus {
+	color : #303030;
+}
+
+.btn-default,
+.btn-default:visited,
+a.btn-default,
+a.btn-default:visited {
+	color      : #303030;
+	background : #DDD;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+a.btn-default:hover,
+a.btn-default:focus {
+	background : #C5C4C4;
+}
+
+.alert {
+	margin : 10px 0 0 0;
+	cursor : pointer;
+}
+
+.alert-error {
+	color            : #A94442;
+	background-color : #F2DEDE;
+	border-color     : #EBCCD1;
+}
+
+/*********************************************************************************************************************************/
+
+.container {
+	max-width      : 780px;
+	min-height     : 100%;
+	padding-bottom : 200px;
+}
+
+.wrap {
+	min-height : 100%;
+}
+
+footer {
+	position   : relative;
+	margin-top : -200px;
+	height     : 190px;
+}
+
+footer.container {
+	min-height : 190px;
+}
+
+/*********************************************************************************************************************************/
+
+h1, h2, h3, h4 {
+	margin      : 0;
+	font-weight : 400;
+	clear       : both;
+}
+
+h1 {
+	font-size  : 38px;
+	padding    : 15px 0;
+	text-align : justify;
+	height     : 75px;
+}
+
+h1:after {
+	content : "";
+	display : inline-block;
+	width   : 100%;
+}
+
+h2 {
+	font-size     : 24px;
+	margin-bottom : 10px;
+}
+
+h3 {
+	font-size   : 24px;
+	line-height : 24px;
+}
+
+h4 {
+	font-size : 14px;
+}
+
+.noMargin {
+	margin : 0 !important;
+}
+
+.noFloat {
+	float : none !important;
+}
+
+.marginTop {
+	margin-top : 10px;
+}
+
+.subtitle {
+
+	margin-bottom : 15px;
+}
+
+.noteText {
+	font-size : 10px;
+	display   : block;
+	clear     : both;
+}
+
+/*********************************************************************************************************************************/
+
+label {
+	font-weight : normal;
+	margin      : 0;
+	cursor      : pointer;
+	display     : inline-block;
+}
+
+input,
+textarea {
+	background            : #FFF;
+	border                : 0 none;
+	border-bottom         : 1px solid #E0E0E0;
+	font-size             : 16px;
+	line-height           : 1.5;
+	padding               : 10px 10px;
+	-webkit-border-radius : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+	-webkit-box-shadow    : 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	-moz-box-shadow       : 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	box-shadow            : 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	width                 : 100%;
+}
+
+input[type="image"] {
+	background         : transparent;
+	border             : 0 none;
+	padding            : 0;
+	-webkit-box-shadow : none;
+	-moz-box-shadow    : none;
+	box-shadow         : none;
+	width              : auto;
+}
+
+input[type="checkbox"] {
+	display      : inline-block;
+	width        : 13px;
+	height       : 13px;
+	margin-right : 5px;
+}
+
+input:focus,
+textarea:focus {
+	border-bottom : 1px solid #C0C0C0;
+}
+
+.glyphicon-user,
+.glyphicon-asterisk,
+.glyphicon-envelope {
+	position : absolute;
+	right    : 10px;
+	top      : 15px;
+	opacity  : 0.5;
+}
+
+form > div {
+	position      : relative;
+	margin-bottom : 10px;
+	clear         : both;
+}
+
+div.submit {
+	width      : 100%;
+	float      : right;
+	text-align : right;
+}
+
+div.submit input {
+	margin-top : 10px;
+}
+
+.error-message {
+	display          : inline;
+	padding          : .2em .6em .3em;
+	font-size        : 75%;
+	font-weight      : 700;
+	line-height      : 1;
+	color            : #FFF;
+	text-align       : center;
+	white-space      : nowrap;
+	vertical-align   : baseline;
+	border-radius    : .25em;
+	background-color : #D9534F;
+}
+
+.tooltip {
+	cursor                : pointer;
+	display               : block;
+	display               : none;
+	position              : absolute;
+	opacity               : 1;
+	text-align            : left;
+	z-index               : 100;
+	background            : #E8E8E8;
+	color                 : #333;
+	font-weight           : 300;
+	border                : 1px solid #DDD;
+	padding               : 4px 10px 4px 10px;
+	border-radius         : 6px;
+	-moz-border-radius    : 6px;
+	-webkit-border-radius : 6px;
+	-o-border-radius      : 6px;
+}
+
+.tooltip:after {
+	border-style : solid;
+	top          : 10px;
+	content      : "";
+	display      : block;
+	left         : -10px;
+	position     : absolute;
+	z-index      : 1;
+	width        : 0;
+	height       : 0;
+	border-style : solid;
+	border-width : 10px 10px 10px 0;
+	border-color : transparent #DDD transparent transparent;
+}
+
+/*********************************************************************************************************************************/
+
+header {
+	position : relative;
+}
+
+.search form {
+	padding  : 10px 0 0 0;
+	position : relative;
+}
+
+.search .sbHolder {
+	clear : none;
+}
+
+.search .inputAhead {
+	clear : none;
+	float : right;
+	width : 78%;
+}
+
+.search .inputAhead input[type="text"] {
+	padding : 10px 10px;
+}
+
+.autocomplete-suggestions {
+	background-color      : #FFF;
+	border                : 1px solid #E6E6E6;
+	-webkit-border-radius : 5px;
+	-moz-border-radius    : 5px;
+	-ms-border-radius     : 5px;
+	border-radius         : 5px;
+	overflow              : auto;
+}
+
+.autocomplete-suggestion {
+	padding       : 3% 5%;
+	white-space   : nowrap;
+	overflow      : hidden;
+	color         : #000;
+	border-bottom : 1px solid #E3E3E3;
+	font-size     : 13px;
+}
+
+.autocomplete-selected {
+	background : #EEE;
+}
+
+.search span.glyphicon {
+	position  : absolute;
+	right     : 10px;
+	top       : 22%;
+	color     : #303030;
+	opacity   : 0.3;
+	font-size : 20px;
+}
+
+.search span.glyphicon-random {
+	position  : absolute;
+	right     : -27px;
+	top       : 29%;
+	color     : #303030;
+	opacity   : 0.3;
+	font-size : 20px;
+}
+
+.search .tooltip {
+	display : block;
+	top     : 50px;
+	left    : 0;
+}
+
+.search .tooltip:after {
+	border-color : #DDD transparent;
+	border-width : 0 10px 10px;
+	top          : -10px;
+	left         : 10px;
+}
+
+.search .tooltip a {
+	text-decoration : underline;
+}
+
+.search .noteText {
+	text-align : right;
+}
+
+/*********************************************************************************************************************************/
+footer,
+footer a,
+footer a:visited {
+	color : #A9AAA9;
+}
+
+footer .footerLinks {
+	float    : left;
+	overflow : hidden;
+	position : relative;
+	width    : 100%;
+}
+
+footer .footerLinks ul {
+	clear      : left;
+	float      : left;
+	left       : 50%;
+	padding    : 15px 0;
+	position   : relative;
+	text-align : center;
+}
+
+footer .footerLinks ul li {
+	display     : block;
+	float       : left;
+	line-height : 15px;
+	margin      : 0 0 0 5px;
+	position    : relative;
+	right       : 50%;
+}
+
+footer .row div {
+	text-align    : center;
+	height        : 140px;
+	margin-bottom : 10px;
+}
+
+footer .row div a {
+	display : block;
+	height  : 100%;
+}
+
+.logoGrooveshark {
+	background : url(../images/grooveshark.png) no-repeat center bottom;
+}
+
+.logoLastfm {
+	background : url(../images/last-fm.jpg) no-repeat center bottom;
+}
+
+.logoArturo {
+	background : url(../images/andresrey.com.ar.jpg) no-repeat center bottom;
+}
+
+.logoDonate {
+	background : url(../images/donate.jpg) no-repeat center bottom;
+}
+
+/*********************************************************************************************************************************/
+
+.donated {
+	position    : relative;
+	margin-left : 5px;
+}
+
+.donated .glyphicon-certificate {
+	color                   : #D5AD6D;
+	background              : -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+	-webkit-background-clip : text;
+	-webkit-text-fill-color : transparent;
+	text-shadow             : 0 0px 0 #EEE, 1px 2px 0 #707070;
+	cursor                  : pointer;
+
+}
+
+.donated .glyphicon-comment {
+	cursor      : pointer;
+	color       : #D9534F;
+	text-shadow : 0 0px 0 #EEE, 1px 2px 0 #707070
+}
+
+/*********************************************************************************************************************************/
+
+.menuUser {
+	padding : 5px 0 0 0;
+	float   : right;
+}
+
+.menuUser .donated {
+	float : right;
+}
+
+.menuUser .tooltip {
+	width : 292px;
+	top   : 30px;
+	left  : -13px;
+}
+
+.menuUser .tooltip:after {
+	border-color : #DDD transparent;
+	border-width : 0 10px 10px;
+	top          : -10px;
+	left         : 10px;
+}
+
+.menuUser ul .menuLists {
+	display : none;
+}
+
+.menuUser ul li:hover .menuLists {
+	display : block;
+}
+
+.menuUser ul > li {
+	float  : left;
+	margin : 0 5px;
+}
+
+.menuUser .menuLists {
+	position   : absolute;
+	top        : 20px;
+	background : #FFF;
+	z-index    : 1000;
+	padding    : 10px;
+	border     : 1px solid #CCC;
+	min-width  : 120px;
+
+}
+
+.menuUser .menuLists li {
+	margin          : 5px 0;
+	list-style-type : decimal;
+}
+
+.clearCookie a {
+	display : block;
+	margin  : 10px 0 0 0;
+}
+
+/*********************************************************************************************************************************/
+
+.cover {
+	display    : none;
+	position   : absolute;
+	top        : 0;
+	left       : 0;
+	right      : 0;
+	bottom     : 0;
+	background : #000;
+	opacity    : 0.7;
+	z-index    : 150;
+}
+
+.formsUser {
+	display               : none;
+	position              : absolute;
+	padding               : 15px 10px;
+	top                   : 150px;
+	left                  : 50%;
+	margin-left           : -143px;
+	width                 : 286px;
+	border                : 1px solid #555;
+	-webkit-border-radius : 10px;
+	-moz-border-radius    : 10px;
+	border-radius         : 10px;
+	background            : #FFF;
+	z-index               : 200;
+}
+
+.formsUser .formUser {
+	display : none;
+}
+
+.formsUser a.closePopup {
+	position  : absolute;
+	display   : block;
+	right     : 0;
+	top       : 0;
+	padding   : 5px 10px;
+	font-size : 12px;
+	opacity   : 1;
+}
+
+#formUserRemove button,
+#formUserRemove a {
+	margin  : 10px auto 0;
+	display : block;
+}
+
+#formUserEdit .btn-danger {
+	float  : right;
+	margin : 10px 0 0;
+}
+
+/*********************************************************************************************************************************/
+
+.content {
+	padding : 25px 0 40px;
+}
+
+.center {
+	width  : 600px;
+	margin : 0 auto;
+}
+
+.default a {
+	text-decoration : underline;
+}
+
+.default h2 {
+	margin-bottom : 20px;
+}
+
+.default h2 span {
+	display     : block;
+	font-size   : 18px;
+	line-height : 20px;
+}
+
+.default li {
+	list-style-type : decimal;
+	margin          : 3px 0;
+}
+
+.default h3 {
+	font-size     : 18px;
+	line-height   : 20px;
+	margin-bottom : 5px;
+}
+
+.default p {
+	margin-bottom : 20px;
+}
+
+.default strong {
+	display       : block;
+	margin-bottom : 5px;
+}
+
+#home p {
+	font-size   : 16px;
+	line-height : 24px;
+	margin      : 90px 0 0;
+	text-align  : center;
+}
+
+#halp form {
+	margin : 15px 0 20px;
+}
+
+#halp .sbHolder {
+	width        : 350px;
+	margin-right : 15px;
+}
+
+#halp .sbHolder a {
+	text-decoration : none;
+}
+
+#halp input[type="image"] {
+	margin-top : 5px;
+}
+
+/*********************************************************************************************************************************/
+.bands .infoBand h3 {
+	float : left;
+}
+
+.bands .infoBand p {
+	clear   : left;
+	float   : left;
+	width   : 450px;
+	padding : 0 15px 0 0;
+}
+
+.bands a {
+	text-decoration : underline;
+}
+
+.bands .imageBand {
+	float : right;
+}
+
+.bands .imageBand img {
+	border                : 1px solid #E0E0E0;
+	-webkit-border-radius : 10px;
+	-moz-border-radius    : 10px;
+	border-radius         : 10px;
+}
+
+.musicBand {
+	position : relative;
+	margin   : 20px 0 0 -300px;
+	left     : 50%;
+
+}
+
+.groovesharkBand {
+	float : left;
+	width : 600px;
+}
+
+.optionsBandUser {
+	margin : 0 0 10px 10px;
+	float  : left;
+}
+
+.optionsBandUser > a {
+	position        : relative;
+	display         : block;
+	margin          : 5px 0;
+	text-decoration : none;
+}
+
+.optionsBandUser .tooltip {
+	width : 95px;
+	top   : -10px;
+	left  : 38px;
+}
+
+.optionsBandUser span.glyphicon {
+	font-size   : 24px;
+	text-indent : 0;
+}
+
+.relatedBands {
+	padding    : 5px 0 40px;
+	text-align : center;
+	float      : right;
+	font-size  : 12px;
+}
+
+.relatedBands a {
+	font-size : 14px;
+}
+
+/*********************************************************************************************************************************/
+
+.buttonMenu {
+	float  : right;
+	margin : 0 0 10px;
+}
+
+.buttonMenu a {
+	text-decoration : none;
+}
+
+/*******************************************/
+
+.playlist h2 {
+	float : left;
+}
+
+.playlist td a {
+	text-decoration : none;
+}
+
+.playlist a.zeroclipboard-is-hover {
+	color : #66BD90;
+}
+
+.playlist .noteText {
+	margin-bottom : 10px;
+}
+
+.playlist form {
+	clear    : both;
+	position : relative;
+}
+
+.playlist .formHelper {
+	margin : 0 0 10px 0;
+}
+
+.playlist h3 {
+	font-size : 14px;
+	margin    : 10px 0 5px 0;
+}
+
+.playlist span.glyphicon {
+	position  : absolute;
+	right     : 10px;
+	top       : 30%;
+	color     : #303030;
+	opacity   : 0.3;
+	font-size : 20px;
+}
+
+.playlist .glyphicon-minus,
+.playlist .glyphicon-plus {
+	display : inline-block;
+	padding : 3px;
+}
+
+.playlist table td {
+	vertical-align : middle !important;
+}
+
+.playlist form {
+	margin-top : 20px;
+}
+
+.playlist form .submit {
+	margin-top : 10px;
+}
+
+#PlaylistAddForm {
+	margin-bottom : 10px;
+}
+
+/*********************************************************************************************************************************/
+
+.profile h2 {
+	float          : left;
+	text-transform : capitalize;
+}
+
+.profile h3 {
+	clear  : both;
+	margin : 10px 0;
+}
+
+.profileHeader .donated {
+	float : left;
+}
+
+.profileHeader span.tooltip {
+	width : 220px;
+	top   : -13px;
+	left  : 29px;
+}
+
+.profile .profileLists {
+	padding-bottom : 10px;
+	margin-bottom  : 15px;
+	border-bottom  : 1px solid #CCC;
+}
+
+.profile .profileLists li {
+	position : relative;
+}
+
+.profile .profileLists span.tooltip {
+	width : 500px;
+	left  : 2px;
+	float : left;
+	top   : 29px;
+}
+
+.profile .profileLists span.tooltip:after {
+	border-color : #DDD transparent;
+	border-width : 0 10px 10px;
+	top          : -10px;
+	left         : 10px;
+}
+
+.profile .profileLists ol li {
+	margin-bottom : 10px;
+}
+
+.unfav .glyphicon-heart {
+	color : #FEC807;
+}
+
+.optionsBandUser .favoriteMessage.tooltip {
+	width : 100px;
+}
+
+.optionsBandUser .favoriteMessage.tooltip:after {
+	content : none;
+}
+
+/*********************************************************************************************************************************/
+
+.statsForm {
+    display : none;
+}
+
+/*********************************************************************************************************************************/
+
+.sbHolder {
+	float                 : left;
+	background-color      : #FFF;
+	margin-top            : 5px;
+	font-weight           : normal;
+	height                : 30px;
+	position              : relative;
+	width                 : 20%;
+	border                : 0 none;
+	border-bottom         : 1px solid #E0E0E0;
+	-webkit-border-radius : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+	-webkit-box-shadow    : 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	-moz-box-shadow       : 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+	box-shadow            : 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+.sbHolder:focus .sbSelector {
+
+}
+
+.sbSelector {
+	display     : block;
+	height      : 30px;
+	left        : 0;
+	line-height : 30px;
+	outline     : none;
+	overflow    : hidden;
+	position    : absolute;
+	text-indent : 10px;
+	top         : 0;
+	width       : 80%;
+}
+
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover {
+	color           : #333;
+	outline         : none;
+	text-decoration : none;
+}
+
+.sbToggle {
+	background : url(../images/select-icons.png) 0 -116px no-repeat;
+	display    : block;
+	height     : 30px;
+	outline    : none;
+	position   : absolute;
+	right      : 0;
+	top        : 0;
+	width      : 30px;
+}
+
+.sbToggle:hover {
+	background : url(../images/select-icons.png) 0 -167px no-repeat;
+}
+
+.sbToggleOpen {
+	background : url(../images/select-icons.png) 0 -16px no-repeat;
+}
+
+.sbToggleOpen:hover {
+	background : url(../images/select-icons.png) 0 -66px no-repeat;
+}
+
+.sbHolderDisabled {
+	background-color : #3C3C3C;
+	border           : solid 1px #515151;
+}
+
+.sbHolderDisabled .sbHolder {
+
+}
+
+.sbHolderDisabled .sbToggle {
+
+}
+
+.sbOptions {
+	background-color      : #FFF;
+	border                : solid 1px #A9AAA9;
+	list-style            : none;
+	left                  : -1px;
+	margin                : 0;
+	padding               : 0;
+	position              : absolute;
+	top                   : 30px;
+	width                 : 100%;
+	z-index               : 1;
+	overflow-y            : auto;
+	-webkit-border-radius : 3px;
+	-moz-border-radius    : 3px;
+	border-radius         : 3px;
+
+}
+
+.sbOptions li {
+	padding : 0 7px;
+}
+
+.sbOptions a {
+	border-bottom : dotted 1px #515151;
+	display       : block;
+	outline       : none;
+	padding       : 7px 0 7px 3px;
+}
+
+.sbOptions a:link, .sbOptions a:visited {
+	color : #333;
+}
+
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus {
+	color : #66BD90;
+}
+
+.sbOptions li.last a {
+	border-bottom : none;
+}
+
+.sbOptions .sbDisabled {
+	border-bottom : dotted 1px #515151;
+	color         : #999;
+	display       : block;
+	padding       : 7px 0 7px 3px;
+}
+
+.sbOptions .sbGroup {
+	border-bottom : dotted 1px #515151;
+	color         : #111;
+	display       : block;
+	font-weight   : bold;
+	padding       : 7px 0 7px 3px;
+}
+
+.sbOptions .sbSub {
+	padding-left : 17px;
+}

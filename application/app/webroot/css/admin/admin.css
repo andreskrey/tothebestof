@@ -1,0 +1,63 @@
+body {
+  padding-top : 60px;
+}
+
+a {
+  cursor : pointer;
+}
+
+a.data-sort {
+  cursor : row-resize;
+}
+
+a.data-toggle {
+  cursor : pointer;
+}
+
+/* sobreescribe color de fila de tabla para la lista de records del admin cuando está ordenada */
+.admin .sorted-column { background-color : #eeeeee !important; }
+
+.admin td {
+  vertical-align : middle !important;
+}
+
+/* sobreescribe regla para iconos blancos en active, en los navs del admin */
+div.admin ul.nav li.active > a > i { background-image : url("../../img/bootstrap/glyphicons-halflings.png") }
+
+.dropdown-menu > li.current > a {
+  background-color : #0081c2;
+  color            : #ffffff;
+}
+
+.show-grid {
+  margin-top    : 10px;
+  margin-bottom : 20px;
+}
+
+.helpBlock {
+  margin-top : 10px;
+}
+
+th.center, td.center {
+  text-align : center;
+}
+
+th.left, td.left {
+  text-align : left;
+}
+
+th.right, td.right {
+  text-align : right;
+}
+
+div.select2-container-multi {
+  margin-left : 0px !important;
+}
+
+input.datetimepicker {
+  margin-top : 0px;
+}
+
+a.btn-edit-delete {
+  margin-top : 10px !important;
+}

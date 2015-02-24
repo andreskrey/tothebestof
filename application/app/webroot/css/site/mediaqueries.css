@@ -1,0 +1,11 @@
+/* generales */
+@media only screen and (min-width: 420px) and (max-width: 767px) {
+}
+/* iPad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+}
+/* iPhone */
+@media only screen and (max-device-width: 480px) {
+}
+
+
